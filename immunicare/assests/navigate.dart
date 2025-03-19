@@ -1,0 +1,1 @@
+#this file was created to push assests folder to gitHub for each upload of images
