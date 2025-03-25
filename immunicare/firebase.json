@@ -1,1 +1,41 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"immunicare-f7f24","appId":"1:1005232117970:android:43ee21ad3e0361b2a3350b","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"immunicare-f7f24","configurations":{"android":"1:1005232117970:android:43ee21ad3e0361b2a3350b","ios":"1:1005232117970:ios:4044d68974c21557a3350b","macos":"1:1005232117970:ios:4044d68974c21557a3350b","web":"1:1005232117970:web:1083a1c54fdbf1cba3350b","windows":"1:1005232117970:web:602759a3dbe133b3a3350b"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "immunicare-f7f24",
+          "appId": "1:1005232117970:android:43ee21ad3e0361b2a3350b",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "immunicare-f7f24",
+          "configurations": {
+            "android": "1:1005232117970:android:43ee21ad3e0361b2a3350b",
+            "ios": "1:1005232117970:ios:4044d68974c21557a3350b",
+            "macos": "1:1005232117970:ios:4044d68974c21557a3350b",
+            "web": "1:1005232117970:web:1083a1c54fdbf1cba3350b",
+            "windows": "1:1005232117970:web:602759a3dbe133b3a3350b"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}

@@ -1,30 +1,20 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:immunicare/main.dart';
+import 'package:immunicare/theme/theme_state.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
-
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  group('ThemeState tests', () {
+    test('should have correct default values', () {
+      final state = ThemeState(isDarkMode: false, themeData: ThemeData.light());
+      expect(state.isDarkMode, false);
+    });
+    
+    test('should properly handle state changes', () {
+      final state1 = ThemeState(isDarkMode: false, themeData: ThemeData.light());
+      final state2 = ThemeState(isDarkMode: true, themeData: ThemeData.dark());
+      
+      expect(state1.isDarkMode, false);
+      expect(state2.isDarkMode, true);
+    });
   });
 }
