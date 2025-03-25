@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     print("HomePage initState - UID: $uid");
-    getChildrenFromDatabase(); // Make sure this runs when page is created
+    getChildrenFromDatabase(); // 
   }
 
   void _goToAddChildPage(BuildContext context) async {
@@ -152,7 +152,7 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  // Update a child in Firestore
+  // Updating a child in Firestore
   Future<void> updateChild(Child child) async {
     if (child.id == null) {
       print("Cannot update child: missing document ID");
