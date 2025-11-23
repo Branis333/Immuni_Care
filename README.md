@@ -1,22 +1,43 @@
-# ImmuniCare
+# **ImmuniCare**
+*A Mobile Application for Improving Child Immunization Tracking in South Sudan*
 
-![ImmuniCare Logo](assets/images/logo.png)
+## 📌 Overview
+ImmuniCare is a Flutter-based mobile application designed to help parents, caregivers, and health workers manage and track children’s immunization schedules. Built to address South Sudan’s critically low vaccination rates, the app provides digital records, timely reminders, and an accessible interface that simplifies vaccine management in low-resource settings.
 
-A comprehensive mobile application for tracking and managing children's immunization schedules.
+Immunization is one of the most effective public health interventions, yet South Sudan’s coverage remains among the lowest globally—only **26%** of children are fully vaccinated by age one (UNICEF, 2023). ImmuniCare offers a practical digital solution to improve timely vaccination, reduce missed doses, and strengthen health service delivery.
 
-## Description
+---
 
-ImmuniCare is a Flutter-based mobile application designed to assist parents and caregivers in tracking their children's vaccination schedules. The application provides timely reminders and maintains digital immunization records, aiming to improve child vaccination rates by making the immunization process more accessible and manageable.
+## 🚀 Key Features
 
-## Features
+### 👤 **User Authentication**
+- Secure login and registration using Firebase Authentication  
+- Supports caregivers and health workers
 
-- **User Authentication**: Secure login and registration system.
-- **Child Profiles**: Add and manage multiple children's profiles.
-- **Immunization Tracking**: Monitor vaccination schedules based on WHO recommendations.
-- **Reminders**: Receive notifications for upcoming vaccinations.
-- **Digital Records**: Store vaccination history digitally.
-- **Offline Support**: Access core features without internet connectivity.
-- **Dark/Light Theme**: Customizable app appearance.
+### 👶 **Child Profiles**
+- Add, edit, and manage multiple children  
+- View each child’s full vaccination history
+
+### 💉 **Immunization Tracking**
+- Schedules built using **WHO-recommended vaccination timelines**  
+- Clear status indicators for completed and upcoming vaccines
+
+### 🔔 **Smart Reminders**
+- Automatic notifications for upcoming doses  
+- Helps reduce late or missed vaccinations
+
+### 📄 **Digital Vaccine Records**
+- Fully digital immunization history  
+- Accessible anywhere, even without physical health cards
+
+### 📶 **Offline Support**
+- Core features work without stable internet connectivity  
+- Syncs automatically when reconnected
+
+### 🌙 **Dark & Light Themes**
+- Customizable interface for accessibility and user comfort
+
+---
 
 ## Screenshots
 
